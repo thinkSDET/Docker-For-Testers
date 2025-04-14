@@ -19,9 +19,8 @@ public class FlightsSelectionPage extends BasePage {
     @FindBy(id = "confirm-flights")
     private WebElement confirmFlightsButton;
 
-    public FlightsSelectionPage(WebDriver driver, List<WebElement> departureFlightsOptions) {
+    public FlightsSelectionPage(WebDriver driver) {
         super(driver);
-        this.departureFlightsOptions = departureFlightsOptions;
     }
 
     @Override
