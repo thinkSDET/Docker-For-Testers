@@ -63,5 +63,4 @@ public class FlightReservationTest extends BaseTest {
         Assert.assertTrue(flightConfirmationPage.isAtExpectedPage());
         Assert.assertEquals(flightConfirmationPage.getPrice(), testData.expectedPrice());
     }
-
 }

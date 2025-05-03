@@ -1,5 +1,5 @@
 package com.docker.pages;
-
+//Fifth page of Application
 import com.docker.common.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
