@@ -35,6 +35,12 @@ public abstract class BaseTest {
         ctx.setAttribute(Constants.DRIVER, this.driver);
     }
 
+    /**
+     * This method is responsible to create a driver for remote driver
+     * @return
+     * @throws MalformedURLException
+     * @throws MalformedURLException
+     */
     private WebDriver getRemoteDriver() throws MalformedURLException, MalformedURLException {
         Capabilities capabilities = new ChromeOptions();
         if(Constants.FIREFOX.equalsIgnoreCase(Config.get(Constants.BROWSER))){
@@ -47,8 +53,11 @@ public abstract class BaseTest {
         return new RemoteWebDriver(new URL(url), capabilities);
     }
 
+    /**
+     * This method is responsible to create a driver for local webDriver
+     * @return
+     */
     private WebDriver getLocalDriver(){
-      //  WebDriverManager.chromedriver().setup();
         WebDriver driver =  new ChromeDriver();
         driver.manage().window().maximize();
         return driver;
